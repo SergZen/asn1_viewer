@@ -1,6 +1,6 @@
 # ASN.1 VIEWER
 
-as1_viewer is a command-line ASN.1 viewer. Use it as a replacement for whatever combination of cat and your editor you currently use for viewing ASN1 format files. 
+asn1_viewer is a command-line ASN.1 viewer. Use it as a replacement for whatever combination of cat and your editor you currently use for viewing ASN1 format files. 
 It is written in Rust and can be installed as a single standalone binary.
 
 ![screenshot](images/screenshot_1.png)
