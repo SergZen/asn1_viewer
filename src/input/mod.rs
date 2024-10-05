@@ -15,9 +15,11 @@ pub mod hex;
 #[derive(Parser, Debug)]
 #[command(author, version, about, long_about = None)]
 struct Cli {
+    /// Path to the ASN.1 format file
     #[arg(short = 'f', long, value_name = "FILE")]
     file: Option<PathBuf>,
 
+    /// ASN.1 specification string in base64 or hex
     #[arg(short = 'a', long)]
     asn1: Option<String>,
 }
