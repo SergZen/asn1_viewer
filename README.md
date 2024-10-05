@@ -40,20 +40,20 @@ at your option.
 
 ## Usage
 
-cat examples/test.crt | asn1_viewer
+`cat examples/test.crt | asn1_viewer`
 
 or
 
-asn1_viewer --file examples/test.crt
+`asn1_viewer --file examples/test.crt`
 
 ![screenshot](images/screenshot_1.png)
 
 or ASN.1 in base64
 
-asn1_viewer --asn1 MC8wLaEDAgEToiYEJDAiMCCgAwIBEqEZGxdJVC1IRUxQLURDQWRtaW5pc3RyYXRvcg==
+`asn1_viewer --asn1 MC8wLaEDAgEToiYEJDAiMCCgAwIBEqEZGxdJVC1IRUxQLURDQWRtaW5pc3RyYXRvcg==`
 
 or ASN.1 in hex
 
-asn1_viewer --asn1 302f302da103020113a226042430223020a003020112a1191b1749542d48454c502d444341646d696e6973747261746f72
+`asn1_viewer --asn1 302f302da103020113a226042430223020a003020112a1191b1749542d48454c502d444341646d696e6973747261746f72`
 
 ![screenshot](images/screenshot_2.png)
