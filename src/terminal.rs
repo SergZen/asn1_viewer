@@ -15,6 +15,7 @@ use tui::widgets::{Borders, List, ListItem, Paragraph};
 use crate::app::App;
 
 pub fn init_terminal_app(app: App) -> Result<(), Box<dyn std::error::Error>> {
+    enable_raw_mode()?;
     let mut stdout = io::stdout();
     execute!(stdout, EnterAlternateScreen, EnableMouseCapture)?;
     let backend = CrosstermBackend::new(stdout);
