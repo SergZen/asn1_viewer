@@ -4,7 +4,7 @@ use std::time::{Duration, Instant};
 use clipboard::{ClipboardContext, ClipboardProvider};
 use crossterm::{event, execute};
 use crossterm::event::{DisableMouseCapture, EnableMouseCapture, Event, KeyCode};
-use crossterm::terminal::{disable_raw_mode, EnterAlternateScreen, LeaveAlternateScreen};
+use crossterm::terminal::{enable_raw_mode, disable_raw_mode, EnterAlternateScreen, LeaveAlternateScreen};
 use log::trace;
 use tui::{Frame, Terminal};
 use tui::backend::CrosstermBackend;
