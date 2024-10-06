@@ -3,17 +3,19 @@ extern crate core;
 use log::error;
 
 use crate::app::App;
+use crate::input::utils::get_input_data;
 use crate::terminal::init_terminal_app;
 
 mod input;
 mod asn1_der;
 mod app;
 mod terminal;
+mod cli;
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
     let _log2 = log2::open("log.txt").start();
 
-    let input= match input::get_input_data() {
+    let input= match get_input_data() {
         Ok(input) => {
             input
         }
