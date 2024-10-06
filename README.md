@@ -57,3 +57,28 @@ or ASN.1 in hex
 `asn1_viewer --asn1 302f302da103020113a226042430223020a003020112a1191b1749542d48454c502d444341646d696e6973747261746f72`
 
 ![screenshot](images/screenshot_2.png)
+
+
+## Compile issues
+
+if you see error during compilation like this:
+
+`= note: /usr/bin/ld: cannot find -lxcb-shape: No such file or directory
+/usr/bin/ld: cannot find -lxcb-xfixes: No such file or directory
+collect2: error: ld returned 1 exit status`
+
+To resolve this, you can install the missing libraries using your package manager. Here are the commands depending on your system:
+
+For Debian/Ubuntu:
+
+`sudo apt-get install libxcb-shape0-dev libxcb-xfixes0-dev`
+
+For Fedora:
+
+`sudo dnf install xcb-util-devel libxcb-devel`
+
+For Arch Linux:
+
+`sudo pacman -S libxcb`
+
+After installing these libraries, try building your program again.
