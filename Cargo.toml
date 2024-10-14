@@ -1,0 +1,16 @@
+[package]
+name = "asn1_viewer"
+version = "0.1.0"
+edition = "2021"
+authors = ["SergZen"]
+
+[dependencies]
+clap = { version = "4.5.17", features = ["derive"] }
+log = "0.4.22"
+log2 = "0.1.11"
+hex = "0.4.3"
+base64 = "0.22.1"
+tui = "0.19"
+crossterm = "0.28.1"
+clipboard = "0.5"
+der = { version = "0.7.9", features = ["oid", "alloc"] }
